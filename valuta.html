@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversione Valute</title>
+    <link rel="stylesheet" href="css/valuta.css">
+</head>
+<body>
+
+
+
+    <div class="container">
+        <a href="index.html" class="backpage"><img src="img/icons8-canc-16.png" alt="" class="backpage"></a>
+        <h1>Conversione Valute</h1>
+        <form id="convertiValute">
+            <div class="form-group">
+                <!-- valute di partenza -->
+                <label for="valutaPartenza">Scegli la valuta di partenza:</label>
+                <select id="valutaPartenza" name="valutaPartenza" onchange="controllaValute()">
+
+                    <option value="EUR">Euro</option>
+                    <option value="USD">Dollaro</option>
+                    <option value="GBP">Sterlina</option>
+                    <option value="JPY">Yen Giapponese</option>
+                    <option value="AUD">Dollaro Australiano</option>
+                    <option value="CAD">Dollaro Canadese</option>
+                    
+                </select>
+            </div>
+            <!-- avlute di conversione -->
+            <div class="form-group">
+                <label for="valutaDestinazione">Scegli la valuta di destinazione:</label>
+                <select id="valutaDestinazione" name="valutaDestinazione" onchange="controllaValute()">
+                    <option value="EUR">Euro</option>
+                    <option value="USD">Dollaro</option>
+                    <option value="GBP">Sterlina</option>
+                    <option value="JPY">Yen Giapponese</option>
+                    <option value="AUD">Dollaro Australiano</option>
+                    <option value="CAD">Dollaro Canadese</option>
+                    
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="importo">Inserisci l'importo:</label>
+                <input type="number" id="importo" name="importo" required>
+            </div>
+
+            <div id="campoTasso" class="form-group hidden">
+                <label for="tassoPersonalizzato">Inserisci il tasso di cambio personalizzato:</label>
+                <input type="number" id="tassoPersonalizzato" name="tassoPersonalizzato">
+            </div>
+
+            <button type="button" onclick="convertiValuta()">Converti</button>
+        </form>
+
+        <div id="risultato"></div>
+    </div>
+    <!-- collegamento javascript -->
+    <script src="javaScript/valuta.js"></script>
+
+</body>
+</html>

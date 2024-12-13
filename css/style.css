@@ -1,0 +1,74 @@
+/* Reset del margine e padding per una base uniforme */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Corpo della pagina */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenitore della pagina iniziale */
+.pagina-iniziale {
+    text-align: center;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Titolo principale */
+.convertitore {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+/* Contenitore per i bottoni */
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Spaziatura tra i bottoni */
+    gap: 20px; /* Aggiungi spazio tra i bottoni */
+}
+
+/* Stile dei bottoni */
+button {
+    width: 100%;
+    height: 100%; 
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+/* Bottone per la valuta */
+.valuta-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Bottone per l'unità di misura */
+.unita-button {
+    background-color: #af4c93;
+    color: white;
+}
+
+/* Effetto hover sui bottoni */
+button:hover {
+    opacity: 0.9;
+}

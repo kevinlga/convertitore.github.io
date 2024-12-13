@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversione Unità di Misura</title>
+    <link rel="stylesheet" href="css/unita.css">
+</head>
+<body>
+
+    <div class="container">
+        <a href="index.html" class="backpage"><img src="img/icons8-canc-16.png" alt="" class="backpage"></a>
+        <h1>Conversione Unità di Misura</h1>
+        <form id="convertiUnita">
+            <!-- unita di misura di partenza -->
+            <label for="unitaPartenza">Scegli l'unità di partenza:</label>
+            <select id="unitaPartenza" name="unitaPartenza">
+                <option value="km">Chilometri</option>
+                <option value="hm">Ettometri</option>  
+                <option value="dam">Decametri</option>  
+                <option value="m">Metri</option>
+                <option value="dm">Decimetri</option>                                
+                <option value="cm">Centimetri</option>
+                <option value="mm">Millimetri</option>
+                
+            </select>
+            <!-- unita convertita -->
+            <label for="unitaDestinazione">Scegli l'unità di destinazione:</label>
+            <select id="unitaDestinazione" name="unitaDestinazione">
+                <option value="km">Chilometri</option>
+                <option value="hm">Ettometri</option>  
+                <option value="dam">Decametri</option>  
+                <option value="m">Metri</option>
+                <option value="dm">Decimetri</option>                                
+                <option value="cm">Centimetri</option>
+                <option value="mm">Millimetri</option>
+                
+            </select>
+
+            <label for="valore">Inserisci il valore:</label>
+            <input type="number" id="valore" name="valore" required>
+
+            <button type="button" onclick="convertiUnita()">Converti</button>
+        </form>
+
+        <div id="risultatoUnita"></div>
+    </div>
+
+    <!-- colegamento al javascript -->
+    <script src="javaScript/unita.js"></script>
+</body>
+</html>
